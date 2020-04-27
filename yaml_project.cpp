@@ -33,8 +33,6 @@ int main()
 	string curtime = asctime(timeinfo);
 	cin.get();
 	char* way = new char[128];
-	scanf("%s", way);
-	char* c = (ReadFile(way));
 	YAML::Node config = YAML::LoadFile("config.yaml");
 	std::string time = config["time"].as<std::string>();
 	cout << time;
